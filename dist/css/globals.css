@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto_Condensed-Regular.ttf");
+}
+@font-face {
+    font-family: "Petit";
+    src: url("../assets/fonts/PetitFormalScript-Regular.ttf");
+}
+:root {
+    --font-primary: "Roboto";
+    --font-size-primary: 1.3em;
+    --font-size-regular: 1rem;
+    --font-italic: "Petit";
+    --color-primary: #000;
+    --color-ivory: #F9F7F4;
+    --color-contrast: #4614db;
+    --color-btn: #fff;
+    --color-btn-background: #ee4466;
+    --color-btn-background-hover: #dc143c;
+    --shadow-base: 0 10px 20px rgba(0,0,0,0.19);
+    --section-background: #fff;
+    --footer-background: #000;
+}
+body {
+    font-family: var(--font-primary),sans-serif;
+    font-size: var(--font-size-primary);
+    color: var(--color-primary);
+    background-color: var(--color-ivory);
+}
+
+.h1 {
+    font-family: var(--font-italic), cursive;
+    font-size: calc(1rem + 3.5vw);
+    text-shadow: var(--c-text-shadow);
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+}
+.h2 {
+    font-family: var(--font-italic), cursive;
+    margin: 1.625rem 0;
+}
+.h2.special {
+    color: var(--color-ivory);
+    margin-bottom: 0;
+}
+
+.paragraph {
+    margin: 1.313rem 0;
+}
+.subtitle {
+    font-family: var(--font-italic), cursive;
+    font-weight: 600;
+}
+.subtitle.sm {
+    font-size: 0.9rem;
+}
+.text-special {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.text-tiny {
+    font-size: 0.7rem;
+}
+.text-footer {
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+}
+.bg-section {
+    background-color: var(--section-background);
+}
+footer {
+    background-color: var(--footer-background);
+}
+.button {
+    display: inline-block;
+    background-color: var(--color-btn-background);
+    padding: 0.5rem 2.5rem;
+    border-radius: 2.5rem;
+    box-shadow: var(--c-box-shadow);
+    font-size: var(--font-size-regular);
+    color: var(--color-btn);
+    cursor: pointer;
+    width: auto;
+    transition: all 0.2s linear;
+}
+.button:hover {
+    background-color: var(--color-btn-background-hover);
+    letter-spacing: 1px;
+}
+.button[type="submit"] {
+    box-shadow: var(--shadow-base);
+}

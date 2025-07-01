@@ -1,0 +1,142 @@
+html {
+    scroll-behavior: smooth;
+    line-height: 1.15;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em;
+}
+button, input, textarea, select {
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+button {
+    cursor: pointer;
+}
+button,
+select {
+    text-transform: none;
+}
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+}
+details {
+    display: block;
+}
+summary {
+    display: list-item;
+}
+b,
+strong {
+    font-weight: bolder;
+}
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+svg {
+    display: block;
+    pointer-events: none;
+    height: auto;
+    width: auto;
+}
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+img {
+    object-fit: cover;
+    border-style: none;
+}
+
+iframe {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+td:not([align]),
+th:not([align]) {
+    text-align: inherit;
+}
+
+main,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+    display: block;
+}
+input[type=checkbox],
+input[type=radio] {
+    vertical-align: baseline;
+}
