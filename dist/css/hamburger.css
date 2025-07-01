@@ -1,0 +1,289 @@
+/*
+    Responsive Hamburger
+ <div class="hamburger-container">
+    <div class="hamburger" id="hamburger-2">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+</div>
+*/
+.hamburger {
+    --hm-line-width: 30px; /*3.125rem; /*50px */
+    --hm-line-width-sm: 1.563rem; /*25px*/
+    --hm-line-height-sm: 2px; /*0.313rem; /*5px*/
+    --hm-line-height: 4px; /*0.313rem; /*5px*/
+    --hm-bg-color: #094f61;
+    --hm-margin: 4px;
+    --hm-margin-sm: 6px;
+}
+.hamburger-container {
+    display: none;
+    padding: 0.625rem; /*10px;*/
+    z-index: 100;
+}
+.hamburger-container.sm {
+    padding: 0;
+}
+.hamburger .line{
+    width: var(--hm-line-width);
+    height: var(--hm-line-height);
+    background-color: var(--hm-bg-color);
+    display: block;
+    margin: var(--hm-margin) auto;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger .line.sm{
+    width: var(--hm-line-width-sm);
+    height: var(--hm-line-height-sm);
+    margin: var(--hm-margin-sm) auto;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+/*small standard X */
+
+/* ONE X */
+
+#hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+}
+#hamburger-1.is-active .line:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+#hamburger-1.is-active .line:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+/* TWO */
+
+#hamburger-2.is-active .line:nth-child(1){
+    transform: translateY(8px);
+}
+#hamburger-2.is-active .line:nth-child(3){
+    transform: translateY(-8px);
+}
+/* THREE */
+
+#hamburger-3.is-active .line:nth-child(1),
+#hamburger-3.is-active .line:nth-child(3){
+    width: calc(var(--hm-line-width) - 10px);
+}
+#hamburger-3.is-active .line:nth-child(1){
+    transform: translateX(-6px) rotate(-45deg);
+}
+#hamburger-3.is-active .line:nth-child(3){
+    transform: translateX(-6px) rotate(45deg);
+}
+/* FOUR */
+#hamburger-4.is-active .line:nth-child(1),
+#hamburger-4.is-active .line:nth-child(3){
+    width: calc(var(--hm-line-width) - 10px);
+}
+#hamburger-4.is-active .line:nth-child(1){
+    transform: translateX(6px) rotate(45deg);
+}
+#hamburger-4.is-active .line:nth-child(3){
+    transform: translateX(6px) rotate(-45deg);
+}
+/* FIVE */
+/* Only for width = 50px*/
+#hamburger-5.is-active{
+    transform: rotate(90deg);
+}
+
+#hamburger-5.is-active .line:nth-child(2){
+    transition: none;
+}
+
+#hamburger-5 .line:nth-child(2){
+    transition-delay: 0.3s;
+}
+
+#hamburger-5.is-active .line:nth-child(2){
+    opacity: 0;
+}
+
+#hamburger-5.is-active .line:nth-child(1),
+#hamburger-5.is-active .line:nth-child(3){
+    width: 2.188rem;
+    transform-origin: right;
+}
+
+#hamburger-5.is-active .line:nth-child(1){
+    transform: translateY(0.938rem) rotate(45deg);
+}
+
+#hamburger-5.is-active .line:nth-child(3){
+    transform: translateY(-0.938rem) rotate(-45deg);
+}
+/* SIX */
+
+#hamburger-6.is-active{
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.6s;
+    transform: rotate(45deg);
+}
+
+#hamburger-6.is-active .line:nth-child(2){
+    width: 0;
+}
+
+#hamburger-6.is-active .line:nth-child(1),
+#hamburger-6.is-active .line:nth-child(3){
+    transition-delay: 0.3s;
+}
+
+#hamburger-6.is-active .line:nth-child(1){
+    transform: translateY(0.813rem);
+}
+
+#hamburger-6.is-active .line:nth-child(3){
+    transform: translateY(-0.813rem) rotate(90deg);
+}
+/* SEVEN */
+
+#hamburger-7.is-active .line:nth-child(1){
+    width: 1.875rem;
+}
+
+#hamburger-7.is-active .line:nth-child(2){
+    width: 2.5rem;
+}
+
+#hamburger-7.is-active .line{
+    transform: rotate(30deg);
+}
+/* EIGHT */
+
+#hamburger-8.is-active .line:nth-child(2){
+    opacity: 0;
+}
+
+#hamburger-8.is-active .line:nth-child(1){
+    transform: translateY(0.813rem);
+}
+
+#hamburger-8.is-active .line:nth-child(3){
+    transform: translateY(-0.813rem) rotate(90deg);
+}
+/* NINE */
+
+#hamburger-9{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-9.is-active{
+    transform: rotate(45deg);
+}
+
+#hamburger-9:before{
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 4.375rem;
+    height: 4.375rem;
+    border: 0.313rem solid transparent;
+    top: calc(50% - 2.188rem);
+    left: calc(50% - 2.188rem);
+    border-radius: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-9.is-active:before{
+    border: 0.313rem solid #ecf0f1;
+}
+
+#hamburger-9.is-active .line{
+    width: 2.188rem;
+}
+
+#hamburger-9.is-active .line:nth-child(2){
+    opacity: 0;
+}
+
+#hamburger-9.is-active .line:nth-child(1){
+    transform: translateY(0.813rem);
+}
+
+#hamburger-9.is-active .line:nth-child(3){
+    transform: translateY(-0.813rem) rotate(90deg);
+}
+/* TEN */
+
+#hamburger-10{
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-10.is-active{
+    transform: rotate(90deg);
+}
+
+#hamburger-10.is-active .line:nth-child(1){
+    width: 1.875rem
+}
+
+#hamburger-10.is-active .line:nth-child(2){
+    width: 2.5rem;
+}
+/* ELEVEN */
+
+#hamburger-11{
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-11.is-active{
+    animation: smallbig 0.6s forwards;
+}
+
+@keyframes smallbig{
+    0%, 100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(0);
+    }
+}
+
+#hamburger-11.is-active .line:nth-child(1),
+#hamburger-11.is-active .line:nth-child(2),
+#hamburger-11.is-active .line:nth-child(3){
+    transition-delay: 0.2s;
+}
+
+#hamburger-11.is-active .line:nth-child(2){
+    opacity: 0;
+}
+
+#hamburger-11.is-active .line:nth-child(1){
+    transform: translateY(0.813rem) rotate(45deg);
+}
+
+#hamburger-11.is-active .line:nth-child(3){
+    transform: translateY(-0.813rem) rotate(-45deg);
+}
+
+/* TWELVE */
+
+#hamburger-12.is-active .line:nth-child(1){
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#hamburger-12.is-active .line:nth-child(3){
+    opacity: 0;
+    transform: translateX(100%);
+}
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+
+    .hamburger-container {
+        display: block;
+    }
+}

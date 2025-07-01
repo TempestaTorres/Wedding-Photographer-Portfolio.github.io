@@ -1,0 +1,40 @@
+@import "mobilenav.css";
+
+/* 1024 - 1199 */
+@media screen and (max-width: 1199px) {
+    :root {
+        --max-width: 1024px;
+    }
+
+
+}
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+    :root {
+        --max-width: 768px;
+    }
+    .logo {
+        display: none;
+    }
+}
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+    :root {
+        --max-width: 425px;
+    }
+
+}
+/* 375 - 424 */
+@media screen and (max-width: 424px) {
+    :root {
+        --max-width: 375px;
+    }
+
+}
+/* 320-374 */
+@media screen and (max-width: 374px) {
+    :root {
+        --max-width: 320px;
+    }
+
+}

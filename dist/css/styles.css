@@ -1,5 +1,23 @@
 @import "base.css";
 @import "effects.css";
 @import "component.css";
+@import "hamburger.css";
 @import "globals.css";
 
+.header-container {
+    padding: 0.313rem 0.5rem;
+}
+.logo {
+    font-family: var(--font-italic), cursive;
+    line-height: 1.938rem;/*31px*/
+}
+.nav {
+    transform: scale(1);
+}
+.nav-list-item {
+    width: 4.375rem;
+    transition: color .2s linear;
+}
+.nav-list-item:hover {
+    color: var(--color-hover);
+}
