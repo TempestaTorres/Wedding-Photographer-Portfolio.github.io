@@ -21,3 +21,23 @@
 .nav-list-item:hover {
     color: var(--color-hover);
 }
+/*Hero*/
+.hero-container {
+    height: 100vh;
+}
+.hero-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 33% 33% 68% 17% / 0% 0% 15% 5%;
+    background-color: var(--color-ivory);
+    background-image: url('../assets/images/wedding-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 50%;
+    box-shadow: var(--shadow-base);
+    opacity: 0.85;
+}
+.hero-card {
+    position: absolute;
+    top: 10%;
+}

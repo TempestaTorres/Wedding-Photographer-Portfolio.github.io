@@ -1,6 +1,10 @@
 @font-face {
     font-family: "Roboto";
-    src: url("../assets/fonts/Roboto_Condensed-Regular.ttf");
+    src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "RobotoThin";
+    src: url("../assets/fonts/Roboto-Light.ttf");
 }
 @font-face {
     font-family: "Petit";
@@ -11,6 +15,7 @@
     --font-size-primary: 1.3em;
     --font-size-regular: 1rem;
     --font-italic: "Petit";
+    --font-thin: "RobotoThin";
     --color-primary: #000;
     --color-ivory: #F9F7F4;
     --color-contrast: #4614db;
@@ -28,6 +33,7 @@ body {
     font-size: var(--font-size-primary);
     color: var(--color-primary);
     background-color: var(--color-ivory);
+    line-height: 1.5;
 }
 
 .h1 {
@@ -51,6 +57,12 @@ body {
 }
 .paragraph {
     margin: 1.313rem 0;
+}
+.title {
+    margin: 0 0 1rem;
+    font-size: calc(1rem + 1vw);
+    text-transform: uppercase;
+    font-family: var(--font-thin),sans-serif;
 }
 .subtitle {
     font-family: var(--font-italic), cursive;
