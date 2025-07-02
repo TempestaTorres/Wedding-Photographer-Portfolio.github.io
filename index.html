@@ -10,48 +10,97 @@
     <script src="./dist/scripts/app.js"></script>
 </head>
 <body>
-    <span id="top"></span>
-    <div class="app-container">
-        <!--Header-->
-        <header class="header bg-header shadow-sm">
-            <div class="header-container hidden flex items-center space-between">
-                <!--Logo-->
-                <a href="#" class="logo">RG</a>
-                <!--Burger-->
-                <div class="hamburger-container sm">
-                    <div class="hamburger" id="hamburger-1">
-                        <span class="line sm"></span>
-                        <span class="line sm"></span>
-                        <span class="line sm"></span>
-                    </div>
+<span id="top"></span>
+<div class="app-container">
+    <!--Header-->
+    <header class="header bg-header shadow-sm">
+        <div class="header-container hidden flex items-center space-between">
+            <!--Logo-->
+            <a href="#" class="logo">RG</a>
+            <!--Burger-->
+            <div class="hamburger-container sm">
+                <div class="hamburger" id="hamburger-1">
+                    <span class="line sm"></span>
+                    <span class="line sm"></span>
+                    <span class="line sm"></span>
                 </div>
-                <!--Nav Bar-->
-                <nav class="nav relative">
-                    <ul class="nav-list flex items-center gap-16">
-                        <li><a class="nav-list-item font-regular" href="#">Portfolio</a></li>
-                        <li><a class="nav-list-item font-regular" href="#">Services</a></li>
-                        <li><a class="nav-list-item font-regular" href="#">About</a></li>
-                        <li><a class="nav-list-item font-regular" href="#">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
-        </header>
-        <!-- Hero-->
-        <div class="hero">
-            <div class="hero-container w-full relative">
-                <!--Hero Image-->
-                <div class="hero-img"></div>
-                <!--Hero Card-->
-                <div class="hero-card w-full flex flex-col items-center">
-                    <h1 class="h1">Wedding photography</h1>
-                    <p class="title">By Rosalie Goldstein</p>
-                    <a href="#portfolio" class="button">Portfolio</a>
-                </div>
+            <!--Nav Bar-->
+            <nav class="nav relative">
+                <ul class="nav-list flex items-center gap-16">
+                    <li><a class="nav-list-item font-regular" href="#">Portfolio</a></li>
+                    <li><a class="nav-list-item font-regular" href="#">Services</a></li>
+                    <li><a class="nav-list-item font-regular" href="#">About</a></li>
+                    <li><a class="nav-list-item font-regular" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero-->
+    <div class="hero">
+        <div class="hero-container w-full relative">
+            <!--Hero Image-->
+            <div class="hero-img"></div>
+            <!--Hero Card-->
+            <div class="hero-card w-full flex flex-col items-center">
+                <h1 class="h1">Wedding photography</h1>
+                <p class="title">By Rosalie Goldstein</p>
+                <a href="#portfolio" class="button">Portfolio</a>
             </div>
         </div>
-        <main>
-
-        </main>
     </div>
+    <main>
+        <!--Section Intro-->
+        <section id="intro" class="pt-48 pb-40">
+            <div class="container">
+                <!--Intro Grid-->
+                <div class="intro-grid grid">
+                    <!--Intro Column-->
+                    <div class="intro-column">
+                        <h2 class="h2">Award-winning wedding photography</h2>
+                        <div class="intro-text mb-40">
+                            <p class="paragraph effect">
+                                Rosalie Goldstein is a freelance wedding photographer, who is based in London, but travels
+                                all over the UK.
+                            </p>
+                            <p class="paragraph effect">
+                                For the last 10 years, she has spent her days photographing weddings and engagement,
+                                eternalise the beauty and the happiness of these events in her photographs.
+                            </p>
+                            <p class="paragraph effect">
+                                Her work has been features in several magazines and publications, and she has won several
+                                prizes, some of which are:
+                            </p>
+                        </div>
+                    </div>
+                    <!--Awards Column-->
+                    <div class="awards flex flex-col items-center gap-8">
+                        <div class="effect flex-column-container">
+                            <svg class="award-icon" width="30" height="30">
+                                <path d="M18 10c0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6 6 2.691 6 6zm4 1.737l-1.895 1.168.687 2.095-2.187.46-.079 2.2-2.213-.304-.84 2.04-1.977-1.031-1.496 1.635-1.497-1.634-1.977 1.031-.84-2.04-2.213.304-.079-2.2-2.186-.461.687-2.095-1.895-1.168 1.374-1.737-1.374-1.737 1.895-1.168-.687-2.095 2.187-.46.079-2.2 2.213.304.84-2.04 1.977 1.031 1.496-1.635 1.497 1.634 1.977-1.031.84 2.04 2.213-.304.079 2.2 2.186.461-.687 2.095 1.895 1.168-1.374 1.737 1.374 1.737zm-3-1.737c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7 7-3.134 7-7zm-1.859 10.276l2.401 3.724 1.146-2h2.312l-2.655-4.103c-.917.969-1.999 1.775-3.204 2.379zm-13.486-2.379l-2.655 4.103h2.312l1.146 2 2.401-3.724c-1.205-.604-2.287-1.41-3.204-2.379z" fill="#dc143c"></path>
+                            </svg>
+                            <p class="text-special">Global Wedding Awards</p>
+                            <p class="text-tiny">Year 2025</p>
+                        </div>
+                        <div class="effect flex-column-container">
+                            <svg class="award-icon" width="30" height="30">
+                                <path d="M18 10c0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6 6 2.691 6 6zm4 1.737l-1.895 1.168.687 2.095-2.187.46-.079 2.2-2.213-.304-.84 2.04-1.977-1.031-1.496 1.635-1.497-1.634-1.977 1.031-.84-2.04-2.213.304-.079-2.2-2.186-.461.687-2.095-1.895-1.168 1.374-1.737-1.374-1.737 1.895-1.168-.687-2.095 2.187-.46.079-2.2 2.213.304.84-2.04 1.977 1.031 1.496-1.635 1.497 1.634 1.977-1.031.84 2.04 2.213-.304.079 2.2 2.186.461-.687 2.095 1.895 1.168-1.374 1.737 1.374 1.737zm-3-1.737c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7 7-3.134 7-7zm-1.859 10.276l2.401 3.724 1.146-2h2.312l-2.655-4.103c-.917.969-1.999 1.775-3.204 2.379zm-13.486-2.379l-2.655 4.103h2.312l1.146 2 2.401-3.724c-1.205-.604-2.287-1.41-3.204-2.379z" fill="#dc143c"></path>
+                            </svg>
+                            <p class="text-special">English Wedding Awards</p>
+                            <p class="text-tiny">Year 2025</p>
+                        </div>
+                        <div class="effect flex-column-container">
+                            <svg class="award-icon" width="30" height="30">
+                                <path d="M18 10c0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6 6 2.691 6 6zm4 1.737l-1.895 1.168.687 2.095-2.187.46-.079 2.2-2.213-.304-.84 2.04-1.977-1.031-1.496 1.635-1.497-1.634-1.977 1.031-.84-2.04-2.213.304-.079-2.2-2.186-.461.687-2.095-1.895-1.168 1.374-1.737-1.374-1.737 1.895-1.168-.687-2.095 2.187-.46.079-2.2 2.213.304.84-2.04 1.977 1.031 1.496-1.635 1.497 1.634 1.977-1.031.84 2.04 2.213-.304.079 2.2 2.186.461-.687 2.095 1.895 1.168-1.374 1.737 1.374 1.737zm-3-1.737c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7 7-3.134 7-7zm-1.859 10.276l2.401 3.724 1.146-2h2.312l-2.655-4.103c-.917.969-1.999 1.775-3.204 2.379zm-13.486-2.379l-2.655 4.103h2.312l1.146 2 2.401-3.724c-1.205-.604-2.287-1.41-3.204-2.379z" fill="#dc143c"></path>
+                            </svg>
+                            <p class="text-special">Wedding Industry Awards</p>
+                            <p class="text-tiny">Year 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
 </body>
 </html>
