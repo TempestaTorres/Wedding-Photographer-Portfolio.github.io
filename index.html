@@ -4,8 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Wedding photography</title>
+    <link rel="stylesheet" href="./dist/css/fancybox.css">
     <link rel="stylesheet" href="./dist/css/styles.css">
     <link rel="stylesheet" href="./dist/css/responsive.css">
+    <script src="./dist/scripts/fancybox.umd.js"></script>
     <script src="./dist/scripts/hamburger.js"></script>
     <script src="./dist/scripts/app.js"></script>
 </head>
@@ -28,8 +30,8 @@
             <!--Nav Bar-->
             <nav class="nav relative">
                 <ul class="nav-list flex items-center gap-16">
-                    <li><a class="nav-list-item font-regular" href="#">Portfolio</a></li>
-                    <li><a class="nav-list-item font-regular" href="#">Services</a></li>
+                    <li><a class="nav-list-item font-regular" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-list-item font-regular" href="#services">Services</a></li>
                     <li><a class="nav-list-item font-regular" href="#">About</a></li>
                     <li><a class="nav-list-item font-regular" href="#">Contact</a></li>
                 </ul>
@@ -60,7 +62,8 @@
                         <h2 class="h2">Award-winning wedding photography</h2>
                         <div class="intro-text mb-40">
                             <p class="paragraph effect">
-                                Rosalie Goldstein is a freelance wedding photographer, who is based in London, but travels
+                                Rosalie Goldstein is a freelance wedding photographer, who is based in London, but
+                                travels
                                 all over the UK.
                             </p>
                             <p class="paragraph effect">
@@ -68,7 +71,8 @@
                                 eternalise the beauty and the happiness of these events in her photographs.
                             </p>
                             <p class="paragraph effect">
-                                Her work has been features in several magazines and publications, and she has won several
+                                Her work has been features in several magazines and publications, and she has won
+                                several
                                 prizes, some of which are:
                             </p>
                         </div>
@@ -77,21 +81,24 @@
                     <div class="awards flex flex-col items-center gap-8">
                         <div class="effect flex-column-container">
                             <svg class="award-icon" width="30" height="30">
-                                <path d="M18 10c0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6 6 2.691 6 6zm4 1.737l-1.895 1.168.687 2.095-2.187.46-.079 2.2-2.213-.304-.84 2.04-1.977-1.031-1.496 1.635-1.497-1.634-1.977 1.031-.84-2.04-2.213.304-.079-2.2-2.186-.461.687-2.095-1.895-1.168 1.374-1.737-1.374-1.737 1.895-1.168-.687-2.095 2.187-.46.079-2.2 2.213.304.84-2.04 1.977 1.031 1.496-1.635 1.497 1.634 1.977-1.031.84 2.04 2.213-.304.079 2.2 2.186.461-.687 2.095 1.895 1.168-1.374 1.737 1.374 1.737zm-3-1.737c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7 7-3.134 7-7zm-1.859 10.276l2.401 3.724 1.146-2h2.312l-2.655-4.103c-.917.969-1.999 1.775-3.204 2.379zm-13.486-2.379l-2.655 4.103h2.312l1.146 2 2.401-3.724c-1.205-.604-2.287-1.41-3.204-2.379z" fill="#dc143c"></path>
+                                <path d="M18 10c0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6 6 2.691 6 6zm4 1.737l-1.895 1.168.687 2.095-2.187.46-.079 2.2-2.213-.304-.84 2.04-1.977-1.031-1.496 1.635-1.497-1.634-1.977 1.031-.84-2.04-2.213.304-.079-2.2-2.186-.461.687-2.095-1.895-1.168 1.374-1.737-1.374-1.737 1.895-1.168-.687-2.095 2.187-.46.079-2.2 2.213.304.84-2.04 1.977 1.031 1.496-1.635 1.497 1.634 1.977-1.031.84 2.04 2.213-.304.079 2.2 2.186.461-.687 2.095 1.895 1.168-1.374 1.737 1.374 1.737zm-3-1.737c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7 7-3.134 7-7zm-1.859 10.276l2.401 3.724 1.146-2h2.312l-2.655-4.103c-.917.969-1.999 1.775-3.204 2.379zm-13.486-2.379l-2.655 4.103h2.312l1.146 2 2.401-3.724c-1.205-.604-2.287-1.41-3.204-2.379z"
+                                      fill="#dc143c"></path>
                             </svg>
                             <p class="text-special">Global Wedding Awards</p>
                             <p class="text-tiny">Year 2025</p>
                         </div>
                         <div class="effect flex-column-container">
                             <svg class="award-icon" width="30" height="30">
-                                <path d="M18 10c0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6 6 2.691 6 6zm4 1.737l-1.895 1.168.687 2.095-2.187.46-.079 2.2-2.213-.304-.84 2.04-1.977-1.031-1.496 1.635-1.497-1.634-1.977 1.031-.84-2.04-2.213.304-.079-2.2-2.186-.461.687-2.095-1.895-1.168 1.374-1.737-1.374-1.737 1.895-1.168-.687-2.095 2.187-.46.079-2.2 2.213.304.84-2.04 1.977 1.031 1.496-1.635 1.497 1.634 1.977-1.031.84 2.04 2.213-.304.079 2.2 2.186.461-.687 2.095 1.895 1.168-1.374 1.737 1.374 1.737zm-3-1.737c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7 7-3.134 7-7zm-1.859 10.276l2.401 3.724 1.146-2h2.312l-2.655-4.103c-.917.969-1.999 1.775-3.204 2.379zm-13.486-2.379l-2.655 4.103h2.312l1.146 2 2.401-3.724c-1.205-.604-2.287-1.41-3.204-2.379z" fill="#dc143c"></path>
+                                <path d="M18 10c0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6 6 2.691 6 6zm4 1.737l-1.895 1.168.687 2.095-2.187.46-.079 2.2-2.213-.304-.84 2.04-1.977-1.031-1.496 1.635-1.497-1.634-1.977 1.031-.84-2.04-2.213.304-.079-2.2-2.186-.461.687-2.095-1.895-1.168 1.374-1.737-1.374-1.737 1.895-1.168-.687-2.095 2.187-.46.079-2.2 2.213.304.84-2.04 1.977 1.031 1.496-1.635 1.497 1.634 1.977-1.031.84 2.04 2.213-.304.079 2.2 2.186.461-.687 2.095 1.895 1.168-1.374 1.737 1.374 1.737zm-3-1.737c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7 7-3.134 7-7zm-1.859 10.276l2.401 3.724 1.146-2h2.312l-2.655-4.103c-.917.969-1.999 1.775-3.204 2.379zm-13.486-2.379l-2.655 4.103h2.312l1.146 2 2.401-3.724c-1.205-.604-2.287-1.41-3.204-2.379z"
+                                      fill="#dc143c"></path>
                             </svg>
                             <p class="text-special">English Wedding Awards</p>
                             <p class="text-tiny">Year 2025</p>
                         </div>
                         <div class="effect flex-column-container">
                             <svg class="award-icon" width="30" height="30">
-                                <path d="M18 10c0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6 6 2.691 6 6zm4 1.737l-1.895 1.168.687 2.095-2.187.46-.079 2.2-2.213-.304-.84 2.04-1.977-1.031-1.496 1.635-1.497-1.634-1.977 1.031-.84-2.04-2.213.304-.079-2.2-2.186-.461.687-2.095-1.895-1.168 1.374-1.737-1.374-1.737 1.895-1.168-.687-2.095 2.187-.46.079-2.2 2.213.304.84-2.04 1.977 1.031 1.496-1.635 1.497 1.634 1.977-1.031.84 2.04 2.213-.304.079 2.2 2.186.461-.687 2.095 1.895 1.168-1.374 1.737 1.374 1.737zm-3-1.737c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7 7-3.134 7-7zm-1.859 10.276l2.401 3.724 1.146-2h2.312l-2.655-4.103c-.917.969-1.999 1.775-3.204 2.379zm-13.486-2.379l-2.655 4.103h2.312l1.146 2 2.401-3.724c-1.205-.604-2.287-1.41-3.204-2.379z" fill="#dc143c"></path>
+                                <path d="M18 10c0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6 6 2.691 6 6zm4 1.737l-1.895 1.168.687 2.095-2.187.46-.079 2.2-2.213-.304-.84 2.04-1.977-1.031-1.496 1.635-1.497-1.634-1.977 1.031-.84-2.04-2.213.304-.079-2.2-2.186-.461.687-2.095-1.895-1.168 1.374-1.737-1.374-1.737 1.895-1.168-.687-2.095 2.187-.46.079-2.2 2.213.304.84-2.04 1.977 1.031 1.496-1.635 1.497 1.634 1.977-1.031.84 2.04 2.213-.304.079 2.2 2.186.461-.687 2.095 1.895 1.168-1.374 1.737 1.374 1.737zm-3-1.737c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7 7-3.134 7-7zm-1.859 10.276l2.401 3.724 1.146-2h2.312l-2.655-4.103c-.917.969-1.999 1.775-3.204 2.379zm-13.486-2.379l-2.655 4.103h2.312l1.146 2 2.401-3.724c-1.205-.604-2.287-1.41-3.204-2.379z"
+                                      fill="#dc143c"></path>
                             </svg>
                             <p class="text-special">Wedding Industry Awards</p>
                             <p class="text-tiny">Year 2024</p>
@@ -99,6 +106,65 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!--Section Portfolio-->
+        <section id="portfolio" class="py-96 box-radius w-full bg-section">
+            <div class="container">
+                <h2 class="h2">Recent work</h2>
+                <p class="paragraph">
+                    These photos were taken from some of Rosalie's most recent shoots. To view enlarged
+                    photo, please click on image.
+                </p>
+                <!--Portfolio Grid-->
+                <div class="portfolio-grid grid grid-cols-3 gap-32 mt-24">
+                    <!--Img 1-->
+                    <div class="img-grid-item shape-1 relative" data-src="./dist/assets/images/wedding-emma-lee.png" data-fancybox="gallery">
+                        <img src="./dist/assets/images/wedding-emma-lee.png" alt="Image of Emma's and Lee's wedding" class="portfolio-image shape-1" loading="lazy">
+                        <div class="image-grid-item-text shape-1">
+                            <span>Emily<span class="rings"><i></i><i></i></span>Josh</span>
+                        </div>
+                    </div>
+                    <!--Img 2-->
+                    <div class="img-grid-item shape-2 relative" data-src="./dist/assets/images/wedding-Jisoo-hyun-woo.png" data-fancybox="gallery">
+                        <img src="./dist/assets/images/wedding-Jisoo-hyun-woo.png" alt="Photo of Ji-soo's and Hyun-woo's wedding" class="portfolio-image shape-2" loading="lazy">
+                        <div class="image-grid-item-text shape-2">
+                            <span>Ji-soo<span class="rings"><i></i><i></i></span>Hyun-woo</span>
+                        </div>
+                    </div>
+                    <!--Img 3-->
+                    <div class="img-grid-item shape-3 relative" data-src="./dist/assets/images/wedding-kelly-stacy.png" data-fancybox="gallery">
+                        <img src="./dist/assets/images/wedding-kelly-stacy.png" alt="Photo of Kelly's and Stacy's wedding" class="portfolio-image shape-3" loading="lazy">
+                        <div class="image-grid-item-text shape-3">
+                            <span>Kelly<span class="rings"><i></i><i></i></span>Stacy</span>
+                        </div>
+                    </div>
+                    <!--Img 4-->
+                    <div class="img-grid-item shape-1 relative" data-src="./dist/assets/images/wedding-laura-mark.png" data-fancybox="gallery">
+                        <img src="./dist/assets/images/wedding-laura-mark.png" alt="Photo of Laura's and Mark's wedding" class="portfolio-image shape-1" loading="lazy">
+                        <div class="image-grid-item-text shape-1">
+                            <span>Laura<span class="rings"><i></i><i></i></span>Mark</span>
+                        </div>
+                    </div>
+                    <!--Img 5-->
+                    <div class="img-grid-item shape-2 relative" data-src="./dist/assets/images/wedding-stella-weston.png" data-fancybox="gallery">
+                        <img src="./dist/assets/images/wedding-stella-weston.png" alt="Photo of Stella's and Weston's wedding" class="portfolio-image shape-2" loading="lazy">
+                        <div class="image-grid-item-text shape-2">
+                            <span>Stella<span class="rings"><i></i><i></i></span>Weston</span>
+                        </div>
+                    </div>
+                    <!--Img 6-->
+                    <div class="img-grid-item shape-3 relative" data-src="./dist/assets/images/wedding-yiren-kuan-lin.png" data-fancybox="gallery">
+                        <img src="./dist/assets/images/wedding-yiren-kuan-lin.png" alt="Photo of Yiren's and Kuan-lin's wedding" class="portfolio-image shape-3" loading="lazy">
+                        <div class="image-grid-item-text shape-3">
+                            <span>Yiren<span class="rings"><i></i><i></i></span>Kuan-lin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Section Services-->
+        <section id="services">
+
         </section>
     </main>
 </div>

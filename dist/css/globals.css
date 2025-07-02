@@ -20,6 +20,7 @@
     --color-ivory: #F9F7F4;
     --color-contrast: #4614db;
     --color-hover:  #ee4466;
+    --color-bg-red: #dc143c;
     --color-btn: #fff;
     --color-btn-background: #ee4466;
     --color-btn-background-hover: #dc143c;
@@ -110,4 +111,8 @@ footer {
 }
 .button[type="submit"] {
     box-shadow: var(--shadow-base);
+}
+.box-radius {
+    border-radius: 100% 0 100% 0 / 13% 87% 13% 87%;
+    box-shadow: 0 10px 80px rgba(0,0,0,0.19), 0 6px 80px rgba(0,0,0,0.23);
 }

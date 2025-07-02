@@ -442,23 +442,23 @@ a, button {
     margin-top: 1rem;
 }
 /* 20px */
-.mt-5 {
+.mt-20 {
     margin-top: 1.25rem;
 }
-.mt-6 {
+.mt-24 {
     margin-top: 1.5rem;
 }
-.mt-7 {
+.mt-28 {
     margin-top: 1.75rem;
 }
-.mt-7-x {
+.mt-30 {
     margin-top: 1.875rem;
 }
-.mt-8 {
+.mt-32 {
     margin-top: 2rem;
 }
 /* 36px */
-.mt-9 {
+.mt-36 {
     margin-top: 2.25rem;
 }
 .mt-12 {
@@ -475,10 +475,6 @@ a, button {
 /* 120px */
 .mt-120 {
     margin-top: 7.5rem;
-}
-/* 50px */
-.mt-12-x {
-    margin-top: 3.125rem;
 }
 /*Margin Bottom*/
 .mb-4 {
@@ -925,7 +921,7 @@ a, button {
     padding-bottom: 1.5rem;
 }
 /* 25px */
-.py-6x {
+.py-25 {
     padding-top: 1.563rem;
     padding-bottom: 1.563rem;
 }
@@ -940,7 +936,7 @@ a, button {
     padding-bottom: 1.75rem;
 }
 /* 30px */
-.py-7 {
+.py-30 {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
 }
@@ -949,7 +945,7 @@ a, button {
     padding-bottom: 2rem;
 }
 /* 36px */
-.py-9 {
+.py-36 {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
 }
@@ -966,7 +962,7 @@ a, button {
     padding-bottom: 3rem;
 }
 /* 50px */
-.py-12-x {
+.py-50 {
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
 }
@@ -976,12 +972,12 @@ a, button {
     padding-bottom: 3.25rem;
 }
 /* 60px */
-.py-15 {
+.py-60 {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
 }
 /* 88px */
-.py-20 {
+.py-88 {
     padding-top: 5.5rem;
     padding-bottom: 5.5rem;
 }
@@ -1000,7 +996,7 @@ a, button {
     padding-bottom: 6.25rem;
 }
 /* 120px */
-.py-27 {
+.py-120 {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
 }
@@ -1287,82 +1283,91 @@ a, button {
     line-height: 1;
 }
 /* 12px */
-.text-xs {
+.text-12 {
     font-size: .75rem;
     line-height: 1rem;
 }
 /* 14px */
-.text-sm {
+.text-14 {
     font-size: .875rem;
     line-height: 1.25rem;
 }
 /*16px*/
-.text-md {
+.text-16 {
     font-size: 1rem;
 }
 /* 18px */
-.text-lg {
+.text-18 {
     font-size: 1.125rem;
 }
 /* 20 px */
-.text-xl {
+.text-20 {
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
 /* 24px */
-.text-2xl {
+.text-24 {
     font-size: 1.5rem;
     line-height: 2rem;
 }
 /* 32px */
-.text-3xl {
+.text-32 {
     font-size: 2rem;
     line-height: 2.438rem;
 }
 /* 34px */
-.text-3xxl {
+.text-34 {
     font-size: 2.125rem;
     line-height: 2rem;
 }
 /* 36px */
-.text-4xl {
+.text-36 {
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
 /* 40px */
-.text-5xl {
+.text-40 {
     font-size: 2.5rem;
     line-height: 3.188rem;
 }
 /* 45px */
-.text-5xxl {
+.text-45 {
     font-size: 2.813rem;
     line-height: 3.313rem;
 }
 /* 55px */
-.text-6xl {
+.text-55 {
     font-size: 3.438rem;
     line-height: 4rem;
 }
 /* 64px */
-.text-7xl {
+.text-64 {
     font-size: 4rem;
     line-height: 5rem;
 }
 /* 80px */
-.text-8 {
+.text-80 {
     font-size: 5rem;
     line-height: 6.375rem;
 }
 /* 100px */
-.text-10 {
+.text-100 {
     font-size: 6.25rem;
     line-height: 8rem;
 }
 /* 120px */
-.text-10xl {
+.text-120 {
     font-size: 7.5rem;
     line-height: 9.75rem;
+}
+.shape-1 {
+    border-radius: 66% 34% 70% 30% / 30% 64% 36% 70%;
+}
+.shape-2 {
+    border-radius: 53% 47% 42% 58% / 30% 48% 52% 70%;
+}
+.shape-3 {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 @keyframes spinAround {
     from {
