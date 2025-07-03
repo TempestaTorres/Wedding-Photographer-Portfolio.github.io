@@ -18,7 +18,7 @@
     width: 4.375rem;
     transition: color .2s linear;
 }
-.nav-list-item:hover {
+.nav-list-item:hover, .card-link:hover {
     color: var(--color-hover);
 }
 /*Hero*/
@@ -51,6 +51,11 @@
     gap: 54px;
 }
 /*Portfolio*/
+#portfolio {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -10px 80px rgba(0,0,0,0.19);
+}
 .portfolio-image {
     display: block;
     width: 100%;
@@ -99,4 +104,27 @@
 .rings i:last-of-type {
     position: relative;
     right: 3px;
+}
+/*Services*/
+#services {
+    margin: -9.375rem 0 -10rem 0;
+    background-image: url('../assets/images/wedding-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 50%;
+}
+.package-card {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+}
+.card-list {
+    display: block;
+    padding-left: 2.5rem;
+    list-style-type: disc;
+}
+.card-link {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-bg-red);
 }
