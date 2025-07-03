@@ -1,8 +1,23 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
+    "use strict";
 
+    const form = document.querySelector("#form");
+    const formButton = form.querySelector("button");
 
+    const formValidateHandler = () => {
 
+        let oldValue = formButton.textContent;
+
+        formButton.textContent = formButton.dataset.name;
+
+        setTimeout(() => {
+
+            formButton.textContent = oldValue;
+            form.reset();
+
+            }, 2000);
+    };
     // Entry point
     hamburgerHandler();
     // Gallery
@@ -18,5 +33,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             },
         },
     });
-
+    // Form Validate
+    validateForm(form, formValidateHandler);
 });

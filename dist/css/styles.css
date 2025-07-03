@@ -34,12 +34,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 50%;
-    box-shadow: var(--shadow-base);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     opacity: 0.85;
 }
 .hero-card {
     position: absolute;
     top: 10%;
+}
+#intro {
+    background: linear-gradient(-180deg, var(--color-ivory), rgba(0, 0, 0, 0.18));
+    padding-bottom: 200px;
 }
 /*Intro Section*/
 .intro-grid {
@@ -54,7 +58,8 @@
 #portfolio {
     position: relative;
     z-index: 1;
-    box-shadow: 0 -10px 80px rgba(0,0,0,0.19);
+    /*box-shadow: 0 -10px 80px rgba(0,0,0,0.19);*/
+    margin-top: -153px;
 }
 .portfolio-image {
     display: block;
@@ -140,4 +145,41 @@
     display: block;
     width: 300px;
     box-shadow: var(--shadow-base);
+}
+/*Testimonials*/
+#testimonials {
+    margin: -6rem 0 -8rem;
+}
+.testimonial-quote {
+    padding-left: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.testimonial-quote p:nth-of-type(2)::before {
+    content: "- ";
+}
+.pink-line {
+    position: relative;
+}
+.pink-line::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    background-color: var(--color-bg-red);
+    transform: scaleY(0);
+    transition: transform 0.8s ease-in-out;
+    transform-origin: top;
+}
+.pink-line.line::before {
+    transform: scaleY(1);
+}
+/*Contact*/
+#contact {
+    background-image: url('../assets/images/wedding-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 50%;
+    margin-top: -3rem;
 }

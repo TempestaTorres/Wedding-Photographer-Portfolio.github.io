@@ -2,6 +2,9 @@ html {
     scroll-behavior: smooth;
     line-height: 1.15;
 }
+body {
+    font-optical-sizing: auto;
+}
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -135,8 +138,4 @@ header,
 hgroup,
 section {
     display: block;
-}
-input[type=checkbox],
-input[type=radio] {
-    vertical-align: baseline;
 }
