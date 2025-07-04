@@ -67,7 +67,20 @@ function scrollingObserver(targetElement, callback, threshold) {
     // Start observing the target
     observer.observe(targetElement);
 }
+/*
+Callback function example:
+function intersectionObserver(entries, observer){
 
+        entries.forEach(entry => {
+            if(entry.isIntersecting && !entry.target.classList.contains('is-active')) {
+                entry.target.classList.add('is-active');
+            }
+            else {
+                entry.target.classList.remove('is-active');
+            }
+        });
+    }
+*/
 function setIntersectionObserverAll(targetElementsClass, callback) {
 
     const elements = document.querySelectorAll(targetElementsClass);
@@ -75,7 +88,7 @@ function setIntersectionObserverAll(targetElementsClass, callback) {
     // Create an Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
 
-        callback(entries);
+        callback(entries, observer);
     }, {
         threshold: 0.1 // Trigger when 10% of the target is visible
     });
