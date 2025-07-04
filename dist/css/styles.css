@@ -54,9 +54,6 @@ main {
     position: relative;
     /*padding-bottom: 12.5rem;*/
 }
-.parallax-container {
-    height: 400px;
-}
 /*Intro Section*/
 .intro-grid {
     grid-template-columns: auto 12.5rem;
@@ -147,8 +144,8 @@ main {
 }
 /*About*/
 #about {
-    margin-bottom: -5rem;
-    box-shadow: 0 10px 80px rgba(0, 0, 0, 0.1);
+    margin-bottom: -6.5rem;
+    /*box-shadow: 0 10px 80px rgba(0, 0, 0, 0.1);*/
 }
 .about-img {
     float: left;
