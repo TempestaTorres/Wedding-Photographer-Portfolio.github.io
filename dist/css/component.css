@@ -1596,3 +1596,33 @@ input:invalid:required, textarea:invalid:required {
         opacity: 0.5;
     }
 }
+/* 1024 - 1199 */
+@media screen and (max-width: 1199px) {
+    :root {
+        --c-max-width: 1024px;
+    }
+}
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+    :root {
+        --c-max-width: 768px;
+    }
+}
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+    :root {
+        --c-max-width: 425px;
+    }
+}
+/* 375 - 424 */
+@media screen and (max-width: 424px) {
+    :root {
+        --c-max-width: 375px;
+    }
+}
+/* 320-374 */
+@media screen and (max-width: 374px) {
+    :root {
+        --c-max-width: 320px;
+    }
+}

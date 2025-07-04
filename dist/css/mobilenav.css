@@ -2,8 +2,9 @@
 /* 768 - 1023 */
 @media screen and (max-width: 1023px) {
 
-    .header-container.hidden {
+    header.header.mobile {
         margin-bottom: -2.5rem;
+        position: relative;
     }
     .nav {
         width: 100%;

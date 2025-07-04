@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     function headerObserver(e) {
 
-        if (window.scrollY > 40 && !headerVisible) {
+        if (window.scrollY > 40 && window.innerWidth > 1023 && !headerVisible) {
             header.classList.add('is-active');
             headerVisible = true;
         }
