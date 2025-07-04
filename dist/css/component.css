@@ -1,5 +1,5 @@
 :root {
-    --max-width: 1200px;
+    --c-max-width: 1200px;
     --c-family-primary: Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
     --c-family-code: Inconsolata, Hack, SF Mono, Roboto Mono, Source Code Pro, Ubuntu Mono, monospace;
     --c-size-small: 0.75rem;
@@ -40,6 +40,7 @@
     --c-black-invert: hsl(221, 14%, 100%);
     --c-black-on-scheme-l: 4%;
     --c-black-on-scheme: hsla(var(--c-black-h), var(--c-black-s), var(--c-black-on-scheme-l), 1);
+    --c-footer-padding: 3rem 0;
 }
 small {
     font-size: var(--c-small-font-size);
@@ -67,7 +68,7 @@ input:invalid:required, textarea:invalid:required {
     display: block;
 }
 .container {
-    max-width: calc(var(--max-width) + 2rem);
+    max-width: calc(var(--c-max-width) + 2rem);
     margin: 0 auto;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -104,11 +105,14 @@ input:invalid:required, textarea:invalid:required {
     max-width: 35ch;
 }
 .footer {
+    padding: var(--c-footer-padding);
+}
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.footer-wrapper {
+.footer-content {
     display: flex;
     align-items: center;
 }
@@ -298,6 +302,12 @@ input:invalid:required, textarea:invalid:required {
 }
 .has-background-black-bis {
     background-color: hsl(0, 0%, 7%);
+}
+.has-hover-danger:hover {
+    color: hsl(348, 100%, 61%);
+}
+.has-hover-danger-svg:hover svg * {
+    fill: hsl(348, 100%, 61%);
 }
 .min-h-screen {
     min-height: 100vh;
