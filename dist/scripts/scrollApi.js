@@ -60,7 +60,7 @@ function scrollingObserver(targetElement, callback, threshold) {
     // Create an Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
 
-        callback(entries);
+        callback(entries, observer);
     }, {
         threshold: threshold // Trigger when the target is visible
     });

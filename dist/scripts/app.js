@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         headerObserver(e);
         backToTopObserver(backToTop);
     }
-    function intersectionObserver(entries){
+    function intersectionObserver(entries, observer){
 
         entries.forEach(entry => {
             if(entry.isIntersecting && !entry.target.classList.contains('is-active')) {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
         });
     }
-    function lineIntersectionObserver(entries){
+    function lineIntersectionObserver(entries, observer){
 
         entries.forEach(entry => {
             if(entry.isIntersecting && !entry.target.classList.contains('line')) {
