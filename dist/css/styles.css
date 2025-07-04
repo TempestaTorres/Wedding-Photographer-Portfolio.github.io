@@ -3,9 +3,15 @@
 @import "component.css";
 @import "hamburger.css";
 @import "globals.css";
+@import "backtotop.css";
 
 main {
     z-index: 2;
+}
+.header.is-active {
+    background-color: rgba(222, 209, 209, 0.8);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
 }
 .header-container {
     padding: 0.313rem 0.5rem;
