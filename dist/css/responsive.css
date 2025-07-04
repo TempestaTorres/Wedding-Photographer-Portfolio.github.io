@@ -19,15 +19,75 @@
 /* 425 - 767 */
 @media screen and (max-width: 767px) {
 
+    :root{
+        --font-size-primary: 1rem;
+    }
+    .h2 {
+        font-size: 1.625rem;
+        line-height: 2.25rem;
+    }
+    .h3 {
+        line-height: 1.75rem;
+        font-size: 1.25rem;
+    }
+    .subtitle {
+        font-size: 1.25rem;
+    }
+    .paragraph {
+        line-height: 1.5rem;
+    }
 
+    .intro-grid {
+        grid-template-columns: 1fr;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .awards {
+        gap: 1rem;
+    }
+    .packages {
+        width: 100%;
+    }
+    #about {
+        margin-bottom: -9.25rem;
+    }
+    .about-img {
+        float: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: 0;
+    }
+    .about-img p {
+        display: block;
+    }
+    .about-image {
+        width: 100%;
+    }
+    .contact-title {
+        margin-left: 10%;
+    }
+    .contact-container {
+        width: 80%;
+        margin: 1.625rem auto 0 auto;
+    }
 }
 /* 375 - 424 */
 @media screen and (max-width: 424px) {
 
-
+    .contact-title {
+        margin-left: 5%;
+    }
+    .contact-container {
+        width: 90%;
+    }
 }
 /* 320-374 */
 @media screen and (max-width: 374px) {
 
+    #about {
+        margin-bottom: -10.125rem;
+    }
 
 }

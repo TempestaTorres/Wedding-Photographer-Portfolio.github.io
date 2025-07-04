@@ -84,7 +84,8 @@ body {
 .text-footer {
     color: #fff;
     font-size: 0.9rem;
-    line-height: 1.1rem;
+    line-height: 1.5rem;
+    text-align: center;
 }
 input:valid:required, textarea:valid:required {
     border: 1px solid var(--border-color);

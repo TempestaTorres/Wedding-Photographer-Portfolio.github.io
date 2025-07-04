@@ -155,6 +155,12 @@ main {
     width: 300px;
     box-shadow: var(--shadow-base);
 }
+.about-img p {
+    display: none;
+    font-size: calc(1em + 2vw);
+    padding-left: 0.5rem;
+    font-weight: 300;
+}
 /*Testimonials*/
 #testimonials {
     margin: -6rem 0 -8rem;
